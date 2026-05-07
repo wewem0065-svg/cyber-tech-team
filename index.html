@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ROOT@CYBER_TECH_TEAM] ~ #./boot.sh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+    <canvas id="matrix"></canvas>
+    <canvas id="code-rain"></canvas>
+
+    <!-- 1. BOOT SCREEN KWANZA -->
+    <div id="boot">
+        <pre id="boot-logo">
+ ██████╗██╗   ██╗██████╗ ███████╗██████╗ 
+██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗
+██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝
+██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗
+╚██████╗   ██║   ██████╔╝███████╗██║  ██║
+ ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝
+                                           
+████████╗███████╗ █████╗ ███╗   ███╗      
+╚══██╔══╝██╔════╝██╔══██╗████╗ ████║      
+   ██║   █████╗  ███████║██╔████╔██║      
+   ██║   ██╔══╝  ██╔══██║██║╚██╔╝██║      
+   ██║   ███████╗██║  ██║██║ ╚═╝ ██║      
+   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝      
+</pre>
+        </pre>
+        <div id="boot-log-container">
+            <div id="boot-log"></div>
+        </div>
+        <div id="boot-complete" class="hidden"></div>
+    </div>
+
+    <!-- 2. LOGIN SCREEN -->
+    <div id="login" class="hidden">
+        <div class="login-box">
+            <div class="warning-banner">⚠️ RESTRICTED ACCESS ⚠️</div>
+            <p>> AUTHORIZED PERSONNEL ONLY</p>
+            <p>> Initializing secure connection...</p>
+            <p>> Username: <span id="user"></span><span class="blink">_</span></p>
+            <p id="pass-row" class="hidden">> Password: <span id="pass"></span><span class="blink">_</span></p>
+            <p id="granted" class="hidden success">> ACCESS GRANTED</p>
+            <p id="loading" class="hidden">> Loading mainframe<span id="dots"></span></p>
+        </div>
+    </div>
+
+    <!-- 3. MAIN DASHBOARD - IMEFICHWA MWANZO -->
+    <div id="main" class="hidden">
+        <div class="header">
+            <div class="logo">
+                <h1 class="glitch-text" data-text="CYBER TECH TEAM">CYBER TECH TEAM</h1>
+                <p class="status-bar">[ONLINE] | IP: 192.168.1.1 | VPN: DAR_TZ | TOR: ACTIVE | MAIN_MODE: ON</p>
+            </div>
+            <div class="warning-small">CLASSIFIED: LEVEL 5 CLEARANCE REQUIRED</div>
+        </div>
+
+        <nav class="panel">
+            <div class="panel-body" style="min-height:auto;padding:10px;display:flex;gap:10px;flex-wrap:wrap;">
+                <a href="index.html" class="btn" style="width:auto;padding:8px 15px;background:var(--green);color:#000;">[HOME]</a>
+                <a href="service.html" class="btn" style="width:auto;padding:8px 15px;">[SERVICES]</a>
+                <a href="premium-apps.html" class="btn" style="width:auto;padding:8px 15px;">[PREMIUM_APPS]</a>
+                <a href="hack-tools.html" class="btn" style="width:auto;padding:8px 15px;">[HACK_TOOLS]</a>
+                <a href="projects.html" class="btn" style="width:auto;padding:8px 15px;">[PROJECTS]</a>
+                <a href="contact.html" class="btn" style="width:auto;padding:8px 15px;">[CONTACT]</a>
+            </div>
+        </nav>
+
+        <div class="panel">
+            <div class="panel-header">
+                <span>MAIN.exe [DASHBOARD]</span>
+                <span class="close">[ACCESS_GRANTED]</span>
+            </div>
+            <div class="panel-body">
+                <h3 class="cyan">> WELCOME TO CYBER TECH TEAM DARKNET</h3>
+                <p class="yellow">> System Uptime: <span id="uptime">00:00:00</span> | CPU: <span id="cpu">15%</span></p>
+                <p>> Select module from navigation above</p>
+                <p class="green">> root@cybertech:~# <span id="cmd"></span><span class="blink">_</span></p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="key" src="https://www.soundjay.com/mechanical/keyboard-1.mp3"></audio>
+    <audio id="beep" src="https://www.soundjay.com/button/beep-07.mp3"></audio>
+    <script src="main.js"></script>
+</body>
+</html>

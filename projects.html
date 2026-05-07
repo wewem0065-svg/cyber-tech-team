@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ROOT@CYBER_TECH_TEAM] ~ #./projects.sh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+    <canvas id="matrix"></canvas>
+    <canvas id="code-rain"></canvas>
+
+    <div id="main" style="display:block;">
+        <div class="header">
+            <div class="logo">
+                <h1 class="glitch-text" data-text="CYBER TECH TEAM">CYBER TECH TEAM</h1>
+                <p class="status-bar">[ONLINE] | IP: 192.168.1.1 | VPN: DAR_TZ | TOR: ACTIVE | PROJECTS_MODE: ON</p>
+            </div>
+            <div class="warning-small">CLASSIFIED: LEVEL 5 CLEARANCE REQUIRED</div>
+        </div>
+
+        <nav class="panel">
+            <div class="panel-body" style="min-height:auto;padding:10px;display:flex;gap:10px;flex-wrap:wrap;">
+                <a href="index.html" class="btn" style="width:auto;padding:8px 15px;">[HOME]</a>
+                <a href="service.html" class="btn" style="width:auto;padding:8px 15px;">[SERVICES]</a>
+                <a href="premium-apps.html" class="btn" style="width:auto;padding:8px 15px;">[PREMIUM_APPS]</a>
+                <a href="hack-tools.html" class="btn" style="width:auto;padding:8px 15px;">[HACK_TOOLS]</a>
+                <a href="projects.html" class="btn" style="width:auto;padding:8px 15px;background:var(--green);color:#000;">[PROJECTS]</a>
+                <a href="contact.html" class="btn" style="width:auto;padding:8px 15px;">[CONTACT]</a>
+            </div>
+        </nav>
+
+        <div class="panel">
+            <div class="panel-header">
+                <span>PROJECTS.log [CLASSIFIED]</span>
+                <span class="close" onclick="window.location.href='index.html'">[X] BACK TO MAIN</span>
+            </div>
+            <div class="panel-body">
+                <h3 class="cyan">> ACTIVE MISSIONS LOG</h3>
+                <p class="red">> CLEARANCE LEVEL 5 REQUIRED</p>
+                <div class="app-card"><h3>[<span class="green">DONE</span>] HACK TOOL v1.0</h3><p>Automated Nmap Scanner + Report Generator</p></div>
+                <div class="app-card"><h3>[<span class="yellow">PENDING</span>] WEBSITE VULNERABILITY SCANNER</h3><p>SQLi, XSS, CSRF Detection</p></div>
+                <div class="app-card"><h3>[<span class="red">FAILED</span>] DARKNET CRAWLER</h3><p>Tor Network Indexer</p></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="key" src="https://www.soundjay.com/mechanical/keyboard-1.mp3"></audio>
+    <audio id="beep" src="https://www.soundjay.com/button/beep-07.mp3"></audio>
+    <script src="common.js"></script>
+</body>
+</html>
